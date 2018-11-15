@@ -1,0 +1,1 @@
+include ':app', ':granor', 'bizmodule:appbiz', 'bizmodule:databiz', 'libmodule:appframework', 'libmodule:dataframework'

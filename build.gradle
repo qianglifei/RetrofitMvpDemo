@@ -1,0 +1,49 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+////外部使用的安卓版本相关
+//ext {
+//    minSdkVersion = 15
+//    targetSdkVersion = 27
+//    compileSdkVersion = 27
+//    buildToolsVersion = '28.0.3'
+//}
+////文件内部使用
+//def supportLibraryVersion = '25.1.0'
+//def butterknifeLatestReleaseVersion = '8.8.1'
+////compile依赖的第三方库
+//ext.deps = [
+//        //android
+//        supportCompat         : "com.android.support:support-compat:$supportLibraryVersion",
+//        supportAnnotations    : "com.android.support:support-annotations:$supportLibraryVersion",
+//        supportRecyclerView   : "com.android.support:recyclerview-v7:$supportLibraryVersion",
+//        supportV4             : "com.android.support:support-v4:$supportLibraryVersion",
+//        supportappcompatV7    : "com.android.support:appcompat-v7:$supportLibraryVersion",
+//        //butterknife
+//        butterknife           : "com.jakewharton:butterknife:$butterknifeLatestReleaseVersion",
+//        butterknifeCompiler   : "com.jakewharton:butterknife-compiler:$butterknifeLatestReleaseVersion"
+//]
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
